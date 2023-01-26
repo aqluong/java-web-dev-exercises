@@ -62,6 +62,10 @@ public class Car {
         return odometer;
     }
 
+    public void addGas(double gas){
+        this.setGasTankLevel(gas + this.getGasTankLevel());
+    }
+
     /**
      * Drive the car an amount of miles. If not enough fuel, drive as far as fuel allows.
      * Adjust fuel levels based on amount needed to drive the distance requested.
